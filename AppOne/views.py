@@ -8,3 +8,4 @@ from .serializers import BookSerializer
 class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+    filterset_fields = ['title', 'author']
